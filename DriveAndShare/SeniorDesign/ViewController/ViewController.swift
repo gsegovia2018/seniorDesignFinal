@@ -10,10 +10,9 @@ import UIKit
 import AVKit
 
 class ViewController: UIViewController {
-    
-    var videoPlayer:AVPlayer?
-    
-    var videoPlayerLayer:AVPlayerLayer?
+    //VideoCode
+    //var videoPlayer:AVPlayer?
+    //var videoPlayerLayer:AVPlayerLayer?
 
     @IBOutlet weak var signUpButton: UIButton!
     
@@ -22,15 +21,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         setUpElements()
-        
+        assignbackground()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    func assignbackground(){
+        let background = UIImage(named: "drive&ShareBack.png")
+
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.redraw
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+    }
+    //VideoCode
+    /*override func viewWillAppear(_ animated: Bool) {
         //Set up video in the background
         setUpVideo()
-    }
+    }*/
     
     
     
@@ -38,8 +49,8 @@ class ViewController: UIViewController {
         Utilities.styleFilledButton(signUpButton)
         Utilities.styleHollowButton(loginButton)
     }
-    
-    func setUpVideo(){
+    //VideoCode
+    /*func setUpVideo(){
         //Get the path to the resource in the bundle
         let bundlePath = Bundle.main.path(forResource: "loginbg", ofType: "mov")
         
@@ -64,10 +75,6 @@ class ViewController: UIViewController {
         
         //Add it to the view and play it
         videoPlayer?.playImmediately(atRate:1)
-        
-        
-    }
-
-
+    }*/
 }
 
