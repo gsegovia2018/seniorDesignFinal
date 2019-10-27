@@ -18,8 +18,9 @@
 		2A123D5D235E63610001B832 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A123D5C235E63610001B832 /* HomeViewController.swift */; };
 		2A5DEA61236238EC0072361D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A5DEA60236238EC0072361D /* GoogleService-Info.plist */; };
 		2A99342A2363B2A900A29E62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9934292363B2A900A29E62 /* Constants.swift */; };
-		2A99342D2363C57500A29E62 /* loginbg.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2A99342C2363C57400A29E62 /* loginbg.mov */; };
 		2A99342F2364BCB400A29E62 /* drive&ShareBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A99342E2364BCB400A29E62 /* drive&ShareBack.png */; };
+		2A99343523651DAA00A29E62 /* homeBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A99343423651DAA00A29E62 /* homeBackground.jpg */; };
+		2A99343723652B9B00A29E62 /* profileIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A99343623652B9B00A29E62 /* profileIcon.jpg */; };
 		2AC7159F235E80780033617C /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC7159E235E80780033617C /* Utilities.swift */; };
 		A8A8116A6D89505B306D1A02 /* Pods_SeniorDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 310F20898FD3625066903EFB /* Pods_SeniorDesign.framework */; };
 /* End PBXBuildFile section */
@@ -39,8 +40,9 @@
 		2A123D5C235E63610001B832 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2A5DEA60236238EC0072361D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A9934292363B2A900A29E62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		2A99342C2363C57400A29E62 /* loginbg.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loginbg.mov; sourceTree = "<group>"; };
 		2A99342E2364BCB400A29E62 /* drive&ShareBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drive&ShareBack.png"; sourceTree = "<group>"; };
+		2A99343423651DAA00A29E62 /* homeBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeBackground.jpg; sourceTree = "<group>"; };
+		2A99343623652B9B00A29E62 /* profileIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profileIcon.jpg; sourceTree = "<group>"; };
 		2AC7159E235E80780033617C /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		310F20898FD3625066903EFB /* Pods_SeniorDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeniorDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C49194D14B15282B0261216 /* Pods-SeniorDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDesign.release.xcconfig"; path = "Target Support Files/Pods-SeniorDesign/Pods-SeniorDesign.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,8 +109,9 @@
 		2A99342B2363BF6D00A29E62 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				2A99343623652B9B00A29E62 /* profileIcon.jpg */,
+				2A99343423651DAA00A29E62 /* homeBackground.jpg */,
 				2A99342E2364BCB400A29E62 /* drive&ShareBack.png */,
-				2A99342C2363C57400A29E62 /* loginbg.mov */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -201,9 +204,10 @@
 			files = (
 				2A123D51235E62BE0001B832 /* LaunchScreen.storyboard in Resources */,
 				2A5DEA61236238EC0072361D /* GoogleService-Info.plist in Resources */,
-				2A99342D2363C57500A29E62 /* loginbg.mov in Resources */,
 				2A123D4E235E62BE0001B832 /* Assets.xcassets in Resources */,
+				2A99343723652B9B00A29E62 /* profileIcon.jpg in Resources */,
 				2A99342F2364BCB400A29E62 /* drive&ShareBack.png in Resources */,
+				2A99343523651DAA00A29E62 /* homeBackground.jpg in Resources */,
 				2A123D4C235E62B40001B832 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

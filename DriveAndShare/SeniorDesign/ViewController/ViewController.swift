@@ -22,10 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpElements()
-        assignbackground()
+        assignBackground()
     }
     
-    func assignbackground(){
+    func assignBackground(){
         let background = UIImage(named: "drive&ShareBack.png")
 
         var imageView : UIImageView!
