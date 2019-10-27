@@ -232,6 +232,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="pTb-RF-CsP" firstAttribute="trailing" secondItem="Agl-ag-I7L" secondAttribute="trailing" constant="40" id="SjO-pR-Zyk"/>
                             <constraint firstItem="Agl-ag-I7L" firstAttribute="leading" secondItem="pTb-RF-CsP" secondAttribute="leading" constant="40" id="iXr-QV-6UD"/>
@@ -261,31 +262,14 @@
         <!--Home View Controller-->
         <scene sceneID="94x-hz-Ims">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="eLQ-qa-81a" customClass="HomeViewController" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m57-FK-BQG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bh3-Qf-AyX">
-                                <rect key="frame" x="154.66666666666666" y="432.33333333333331" width="104.99999999999997" height="31.333333333333314"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Bh3-Qf-AyX" firstAttribute="centerX" secondItem="m57-FK-BQG" secondAttribute="centerX" id="1On-Ko-VgJ"/>
-                            <constraint firstItem="Bh3-Qf-AyX" firstAttribute="centerY" secondItem="m57-FK-BQG" secondAttribute="centerY" id="9fb-qK-nIb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="OCV-5A-yNB"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                <viewController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="eLQ-qa-81a" customClass="HomeViewController" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IKr-9o-KuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2229" y="113"/>
+            <point key="canvasLocation" x="2349" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yL0-Eq-ThM">
