@@ -18,14 +18,17 @@ class HomeViewController: UIViewController {
         
     }
     
-    /*//Assign Background
-    func assignBackground(){
+    //Assign Background
+    /*func assignBackground(){
         let background = UIImage(named: "homeBackground.jpg")
 
         var imageView : UIImageView!
         imageView = UIImageView(frame: view.bounds)
         imageView.contentMode =  UIView.ContentMode.redraw
         imageView.clipsToBounds = true
+        
+        imageView.bounds.
+        
         imageView.image = background
         imageView.center = view.center
         view.addSubview(imageView)

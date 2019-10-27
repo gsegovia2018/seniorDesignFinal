@@ -260,16 +260,25 @@
             <point key="canvasLocation" x="1516" y="-185"/>
         </scene>
         <!--Home View Controller-->
-        <scene sceneID="94x-hz-Ims">
+        <scene sceneID="93E-Lb-nBO">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="eLQ-qa-81a" customClass="HomeViewController" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                <viewController storyboardIdentifier="HomeVC" id="Yrg-cV-b2p" customClass="HomeViewController" customModule="SeniorDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A4J-V3-drv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="UZb-wn-g6H">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wTK-eL-bAL"/>
+                    </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IKr-9o-KuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uib-6B-qQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2349" y="113"/>
+            <point key="canvasLocation" x="2300" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yL0-Eq-ThM">
@@ -289,7 +298,10 @@
             <point key="canvasLocation" x="52" y="113"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="homeBackground" width="640" height="640"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ldG-Vz-dOD"/>
+        <segue reference="Uh5-Yh-v8l"/>
     </inferredMetricsTieBreakers>
 </document>
