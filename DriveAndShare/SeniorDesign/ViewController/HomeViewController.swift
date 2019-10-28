@@ -10,8 +10,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var profileButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignBackground()
 
         // Do any additional setup after loading the view.
         //assignBackground()
@@ -19,20 +22,19 @@ class HomeViewController: UIViewController {
     }
     
     //Assign Background
-    /*func assignBackground(){
+    func assignBackground(){
         let background = UIImage(named: "homeBackground.jpg")
 
         var imageView : UIImageView!
         imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode =  UIView.ContentMode.redraw
+        imageView.contentMode =  UIView.ContentMode.right
         imageView.clipsToBounds = true
-        
-        imageView.bounds.
-        
         imageView.image = background
         imageView.center = view.center
         view.addSubview(imageView)
         self.view.sendSubviewToBack(imageView)
-    }*/
+    }
+    
+    
 
 }
