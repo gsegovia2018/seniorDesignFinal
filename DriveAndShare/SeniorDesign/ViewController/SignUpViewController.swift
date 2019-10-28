@@ -103,6 +103,8 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //let yearBirth = yearBirthTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             
             //Create the user
