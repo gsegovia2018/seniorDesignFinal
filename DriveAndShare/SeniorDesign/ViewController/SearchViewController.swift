@@ -1,17 +1,15 @@
 //
-//  ProfileViewController.swift
+//  SearchViewController.swift
 //  SeniorDesign
 //
-//  Created by Guillermo Segovia Marcos on 10/27/19.
+//  Created by Guillermo Segovia Marcos on 11/24/19.
 //  Copyright © 2019 Guillermo Segovia. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class SearchViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
