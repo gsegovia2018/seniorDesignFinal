@@ -75,7 +75,7 @@ class SignUpViewController: UIViewController {
             return "Make sure your passwords are the same"
         }
         //Check if the gender is correct
-        let genderOption: [String] = ["Man", "man", "Woman", "woman"]
+        let genderOption: [String] = ["Man", "Woman"]
         let genderText = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if !genderOption.contains(genderText)  {
             return "Make sure you type 'Man or Woman'"
@@ -103,8 +103,8 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            //let yearBirth = yearBirthTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            //let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let yearBirth = yearBirthTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             
             //Create the user
@@ -121,7 +121,7 @@ class SignUpViewController: UIViewController {
                     //User was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstName":firstName, "lastName":lastName, "uid":result!.user.uid]) { (error) in
+                    db.collection("profile").addDocument(data: ["firstName":firstName, "lastName":lastName, "yearBirth":yearBirth, "gender":gender, "uid":result!.user.uid]) { (error) in
                         
                         if error != nil {
                             //Show error message
@@ -153,7 +153,8 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
+            let yearBirth = yearBirthTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             //Create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
@@ -169,7 +170,7 @@ class SignUpViewController: UIViewController {
                     //User was created successfully, now store the first name and last name
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstName":firstName, "lastName":lastName, "uid":result!.user.uid]) { (error) in
+                    db.collection("profile").addDocument(data: ["firstName":firstName, "lastName":lastName, "yearBirth":yearBirth, "gender":gender, "uid":result!.user.uid]) { (error) in
                         
                         if error != nil {
                             //Show error message

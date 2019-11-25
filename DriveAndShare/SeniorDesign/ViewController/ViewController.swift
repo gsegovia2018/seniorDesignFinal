@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AVKit
+//import AVKit
 
 class ViewController: UIViewController {
     //VideoCode
