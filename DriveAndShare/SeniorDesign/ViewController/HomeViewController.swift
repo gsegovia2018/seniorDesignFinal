@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
@@ -19,6 +20,14 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         //assignBackground()
         
+    }
+    
+    @IBAction func handleLogout(_ target: UIBarButtonItem) {
+        try! Auth.auth().signOut()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginNavController = storyboard.instantiateViewController(identifier: "NavigationController")
+
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loginNavController)
     }
     
     //Assign Background

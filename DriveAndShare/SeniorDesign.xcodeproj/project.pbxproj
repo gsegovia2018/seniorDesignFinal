@@ -15,6 +15,7 @@
 		2A123D59235E633B0001B832 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A123D58235E633B0001B832 /* SignUpViewController.swift */; };
 		2A123D5B235E63510001B832 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A123D5A235E63510001B832 /* LoginViewController.swift */; };
 		2A123D5D235E63610001B832 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A123D5C235E63610001B832 /* HomeViewController.swift */; };
+		2A1D92F6238B78C5009A9FE7 /* guilleProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A1D92F5238B78C4009A9FE7 /* guilleProfile.png */; };
 		2A5DEA61236238EC0072361D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A5DEA60236238EC0072361D /* GoogleService-Info.plist */; };
 		2A62988B238B2C100062AFF6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62988A238B2C100062AFF6 /* SearchViewController.swift */; };
 		2A62988D238B2C280062AFF6 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62988C238B2C280062AFF6 /* PostViewController.swift */; };
@@ -40,6 +41,7 @@
 		2A123D58235E633B0001B832 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2A123D5A235E63510001B832 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2A123D5C235E63610001B832 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2A1D92F5238B78C4009A9FE7 /* guilleProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guilleProfile.png; sourceTree = "<group>"; };
 		2A5DEA60236238EC0072361D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A62988A238B2C100062AFF6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2A62988C238B2C280062AFF6 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				2A99343423651DAA00A29E62 /* homeBackground.jpg */,
 				2A99342E2364BCB400A29E62 /* drive&ShareBack.png */,
 				2AF00B122366635800D10ACB /* profileIcon.png */,
+				2A1D92F5238B78C4009A9FE7 /* guilleProfile.png */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				2A99342F2364BCB400A29E62 /* drive&ShareBack.png in Resources */,
 				2A629897238B31BC0062AFF6 /* Assets.xcassets in Resources */,
 				2A99343523651DAA00A29E62 /* homeBackground.jpg in Resources */,
+				2A1D92F6238B78C5009A9FE7 /* guilleProfile.png in Resources */,
 				2A123D4C235E62B40001B832 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
