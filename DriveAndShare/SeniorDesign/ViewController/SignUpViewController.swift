@@ -13,8 +13,6 @@ import Firebase
 class SignUpViewController: UIViewController {
 
     //Get all the elements
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -61,7 +59,6 @@ class SignUpViewController: UIViewController {
             genderTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
             return "Please fill in all fields"
         }
-        
         //Check if the password is secure
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -80,9 +77,7 @@ class SignUpViewController: UIViewController {
         if !genderOption.contains(genderText)  {
             return "Make sure you type 'Man or Woman'"
         }
-    
         return nil
-        
     }
     
     
@@ -141,58 +136,6 @@ class SignUpViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func doneButtonTapped(_ sender: Any) {
-        
-        //Validate the fields
-        let error = validateFields()
-        
-        if error != nil {
-            
-            //There's something wrong with the fields, show error message
-            showError(error!)
-        }
-        else{
-            
-            //Create cleaned versions of the data
-            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let yearBirth = yearBirthTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let gender = genderTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            //Create the user
-            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-                
-                //Check for errors
-                if err != nil {
-                    
-                    //There was an error creating the user
-                    self.showError("Error creating user")
-                }
-                else {
-                
-                    //User was created successfully, now store the first name and last name
-                    let db = Firestore.firestore()
-                    
-                    db.collection("profile").addDocument(data: ["firstName":firstName, "lastName":lastName, "yearBirth":yearBirth, "gender":gender, "uid":result!.user.uid]) { (error) in
-                        
-                        if error != nil {
-                            //Show error message
-                            self.showError("Error saving user data")
-                        }
-                    }
-                    
-                    //Transition to the home screen
-                    self.transitionToHome()
-                }
-            }
-        }
-    }
-    
-    
-    
     //------------------FUNCTIONS------------------------------------------------
     
     func showError(_ message:String) {
