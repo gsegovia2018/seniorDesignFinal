@@ -37,22 +37,12 @@ class PostViewController: UIViewController {
         errorLabel.alpha = 0
         
         //Style elements
-        
+        Utilities.styleTextField(fromWhereTextField)
+        Utilities.styleTextField(toWhereTextField)
+        Utilities.styleTextField(chooseDayTextField)
+        Utilities.styleTextField(chooseTimeTextField)
         Utilities.styleHollowButton(postButton)
     }
-    
-    func validateFields() -> String? {
-    
-    //Check that all fields are filled in
-        if fromWhereTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            toWhereTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            chooseDayTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            chooseTimeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return "Please fill in all fields"
-        }
-        return nil
-    }
-        
     
     @IBAction func postButtonPressed(_ sender: Any) {
     
@@ -93,6 +83,18 @@ class PostViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func validateFields() -> String? {
+    
+    //Check that all fields are filled in
+        if fromWhereTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            toWhereTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            chooseDayTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            chooseTimeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in all fields"
+        }
+        return nil
+    }
     
     
     func showError(_ message:String) {

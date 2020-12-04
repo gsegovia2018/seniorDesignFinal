@@ -10,18 +10,28 @@ import UIKit
 import Firebase
 
 class HomeViewController: UIViewController {
+    
+    
+    
+    //Variables
+    private var myTripsCollectionRef: CollectionReference!
+    private var myTrips = [myTrip]()
 
     @IBOutlet weak var profileButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         assignBackground()
+        
+
 
         // Do any additional setup after loading the view.
         //assignBackground()
         
     }
     
+    
+    //LOGOUT
     @IBAction func handleLogout(_ target: UIBarButtonItem) {
         try! Auth.auth().signOut()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
